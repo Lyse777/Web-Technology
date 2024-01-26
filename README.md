@@ -1,6 +1,6 @@
 HTML, CSS and JAVASCRIPT usage on the signup, login, forgot password page. 
 
-Stylesheet: Linked to style.css for consistent styling across all pages.
+Stylesheet: Linked to style.css for styling across all pages.
 
 Signup Page
 --------------
@@ -18,9 +18,5 @@ Forgot Password Page
 -----------------------
 File: forgot_password.html
 Functionality: Users can request a password reset by entering their email. If the email format is valid, users are redirected 
-to reset_password.html to enter a new password.
+to reset_password.html to enter a new password which Includes client-side validation for the new password.
 
-Reset Password Page
------------------------
-File: reset_password.html
-Functionality: Allows users to set a new password after verifying their email address. Includes client-side validation for the new password.
