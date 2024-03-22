@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+  <display-name>AUCA_STUDENT_MANAGEMENT_MODULE</display-name>
+  <welcome-file-list>
+    <welcome-file>login.html</welcome-file>
+  </welcome-file-list>
+
+  <!-- Servlet Declarations -->
+  <servlet>
+    <servlet-name>RegisterUserServlet</servlet-name>
+    <servlet-class>auca.servlet.RegisterUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LoginUserServlet</servlet-name>
+    <servlet-class>auca.servlet.LoginUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>auca.servlet.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ForgotPasswordServlet</servlet-name>
+    <servlet-class>auca.servlet.ForgotPasswordServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ResetPasswordServlet</servlet-name>
+    <servlet-class>auca.servlet.ResetPasswordServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ErrorHandlingServlet</servlet-name>
+    <servlet-class>auca.servlet.ErrorHandlingServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>InsertTeacherServlet</servlet-name>
+    <servlet-class>auca.servlet.InsertTeacherServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>InsertStudentServlet</servlet-name>
+    <servlet-class>auca.servlet.InsertStudentServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>InsertAcademicUnitServlet</servlet-name>
+    <servlet-class>auca.servlet.InsertAcademicUnitServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>InsertSemesterServlet</servlet-name>
+    <servlet-class>auca.servlet.InsertSemesterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>InsertCourseServlet</servlet-name>
+    <servlet-class>auca.servlet.InsertCourseServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>InsertCourseDefinitionServlet</servlet-name>
+    <servlet-class>auca.servlet.InsertCourseDefinitionServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>InsertStudentRegistrationServlet</servlet-name>
+    <servlet-class>auca.servlet.InsertStudentRegistrationServlet</servlet-class>
+  </servlet>  
+<servlet>
+    <servlet-name>DisplaySemestersServlet</servlet-name>
+    <servlet-class>auca.servlet.DisplaySemestersServlet</servlet-class>
+</servlet>
+<servlet>
+    <servlet-name>DeleteSemesterServlet</servlet-name>
+    <servlet-class>auca.servlet.DeleteSemesterServlet</servlet-class>
+    </servlet>    
+     <servlet>
+        <servlet-name>UpdateSemesterServlet</servlet-name>
+        <servlet-class>auca.servlet.UpdateSemesterServlet</servlet-class>
+    </servlet>     
+<servlet>
+    <servlet-name>DisplayCoursesServlet</servlet-name>
+    <servlet-class>auca.servlet.DisplayCoursesServlet</servlet-class>
+</servlet>
+<servlet>
+    <servlet-name>DeleteCourseServlet</servlet-name>
+    <servlet-class>auca.servlet.DeleteCourseServlet</servlet-class>
+</servlet>
+<servlet>
+        <servlet-name>UpdateCourseServlet</servlet-name>
+        <servlet-class>auca.servlet.UpdateCourseServlet</servlet-class>
+    </servlet>
+ <servlet>
+        <servlet-name>DeleteStudentServlet</servlet-name>
+        <servlet-class>auca.servlet.DeleteStudentServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DisplayStudentsServlet</servlet-name>
+        <servlet-class>auca.servlet.DisplayStudentsServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateStudentServlet</servlet-name>
+        <servlet-class>auca.servlet.UpdateStudentServlet</servlet-class>
+    </servlet>
+ <servlet>
+        <servlet-name>DisplayAcademicUnitsServlet</servlet-name>
+        <servlet-class>auca.servlet.DisplayAcademicUnitsServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteAcademicUnitServlet</servlet-name>
+        <servlet-class>auca.servlet.DeleteAcademicUnitServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateAcademicUnitServlet</servlet-name>
+        <servlet-class>auca.servlet.UpdateAcademicUnitServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteCourseDefinitionServlet</servlet-name>
+        <servlet-class>auca.servlet.DeleteCourseDefinitionServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DisplayCourseDefinitionsServlet</servlet-name>
+        <servlet-class>auca.servlet.DisplayCourseDefinitionsServlet</servlet-class>
+    </servlet>
+     <servlet>
+        <servlet-name>UpdateCourseDefinitionServlet</servlet-name>
+        <servlet-class>auca.servlet.UpdateCourseDefinitionServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteStudentRegistrationServlet</servlet-name>
+        <servlet-class>auca.servlet.DeleteStudentRegistrationServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DisplayStudentRegistrationsServlet</servlet-name>
+        <servlet-class>auca.servlet.DisplayStudentRegistrationsServlet</servlet-class>
+    </servlet>
+     <servlet>
+        <servlet-name>UpdateStudentRegistrationServlet</servlet-name>
+        <servlet-class>auca.servlet.UpdateStudentRegistrationServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteTeacherServlet</servlet-name>
+        <servlet-class>auca.servlet.DeleteTeacherServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DisplayTeacherServlet</servlet-name>
+        <servlet-class>auca.servlet.DisplayTeacherServlet</servlet-class>
+    </servlet>    
+        <servlet>
+        <servlet-name>UpdateTeacherServlet</servlet-name>
+        <servlet-class>auca.servlet.UpdateTeacherServlet</servlet-class>
+    </servlet>
+    
+    
+
+  <!-- Servlet Mappings -->
+  <servlet-mapping>
+    <servlet-name>RegisterUserServlet</servlet-name>
+    <url-pattern>/registerUser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginUserServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ForgotPasswordServlet</servlet-name>
+    <url-pattern>/forgotPassword</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ResetPasswordServlet</servlet-name>
+    <url-pattern>/resetPassword</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ErrorHandlingServlet</servlet-name>
+    <url-pattern>/errorHandling</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InsertTeacherServlet</servlet-name>
+    <url-pattern>/addTeacher</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InsertStudentServlet</servlet-name>
+    <url-pattern>/addStudent</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InsertAcademicUnitServlet</servlet-name>
+    <url-pattern>/addAcademicUnit</url-pattern>
+</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InsertSemesterServlet</servlet-name>
+    <url-pattern>/addSemester</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InsertCourseServlet</servlet-name>
+    <url-pattern>/addCourse</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InsertCourseDefinitionServlet</servlet-name>
+    <url-pattern>/addCourseDefinition</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InsertStudentRegistrationServlet</servlet-name>
+    <url-pattern>/addStudentRegistration</url-pattern>
+  </servlet-mapping>
+<servlet-mapping>
+    <servlet-name>DisplaySemestersServlet</servlet-name>
+    <url-pattern>/DisplaySemestersServlet</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+     <servlet-name>DeleteSemesterServlet</servlet-name>
+     <url-pattern>/DeleteSemesterServlet</url-pattern>
+    </servlet-mapping>  
+  <servlet-mapping>
+        <servlet-name>UpdateSemesterServlet</servlet-name>
+        <url-pattern>/UpdateSemesterServlet</url-pattern>
+    </servlet-mapping>      
+<servlet-mapping>
+        <servlet-name>DeleteStudentServlet</servlet-name>
+        <url-pattern>/DeleteStudentServlet</url-pattern>
+    </servlet-mapping>
+  <servlet-mapping>
+        <servlet-name>DisplayStudentsServlet</servlet-name>
+        <url-pattern>/DisplayStudentsServlet</url-pattern>
+    </servlet-mapping>    
+    <servlet-mapping>
+        <servlet-name>UpdateStudentServlet</servlet-name>
+        <url-pattern>/UpdateStudentServlet</url-pattern>
+    </servlet-mapping>
+<servlet-mapping>
+    <servlet-name>DisplayCoursesServlet</servlet-name>
+    <url-pattern>/DisplayCoursesServlet</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>DeleteCourseServlet</servlet-name>
+    <url-pattern>/DeleteCourseServlet</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+        <servlet-name>UpdateCourseServlet</servlet-name>
+        <url-pattern>/UpdateCourseServlet</url-pattern>
+    </servlet-mapping>
+<servlet-mapping>
+        <servlet-name>DisplayAcademicUnitsServlet</servlet-name>
+        <url-pattern>/DisplayAcademicUnitsServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteAcademicUnitServlet</servlet-name>
+        <url-pattern>/DeleteAcademicUnitServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateAcademicUnitServlet</servlet-name>
+        <url-pattern>/UpdateAcademicUnitServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteCourseDefinitionServlet</servlet-name>
+        <url-pattern>/DeleteCourseDefinitionServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DisplayCourseDefinitionsServlet</servlet-name>
+        <url-pattern>/DisplayCourseDefinitionsServlet</url-pattern>
+    </servlet-mapping>
+       <servlet-mapping>
+        <servlet-name>UpdateCourseDefinitionServlet</servlet-name>
+        <url-pattern>/UpdateCourseDefinitionServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteStudentRegistrationServlet</servlet-name>
+        <url-pattern>/DeleteStudentRegistrationServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DisplayStudentRegistrationsServlet</servlet-name>
+        <url-pattern>/DisplayStudentRegistrationsServlet</url-pattern>
+    </servlet-mapping>
+      <servlet-mapping>
+        <servlet-name>UpdateStudentRegistrationServlet</servlet-name>
+        <url-pattern>/UpdateStudentRegistrationServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteTeacherServlet</servlet-name>
+        <url-pattern>/DeleteTeacherServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DisplayTeacherServlet</servlet-name>
+        <url-pattern>/DisplayTeacherServlet</url-pattern>
+    </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>UpdateTeacherServlet</servlet-name>
+        <url-pattern>/UpdateTeacherServlet</url-pattern>
+    </servlet-mapping>
+
+
+  <!-- Filter Declarations -->
+  <filter>
+    <filter-name>AuthenticationFilter</filter-name>
+    <filter-class>auca.filter.AuthenticationFilter</filter-class>
+  </filter>
+
+ <!-- Filter Mappings -->
+  <filter-mapping>
+    <filter-name>AuthenticationFilter</filter-name>
+    <url-pattern>/teacher/*</url-pattern>
+    <url-pattern>/admin/*</url-pattern>
+    <url-pattern>/student/*</url-pattern>
+    <url-pattern>/logout</url-pattern>
+        <!-- Academic Unit -->
+    <url-pattern>/academicunitform.html</url-pattern> 
+    <url-pattern>/UpdateAcademicUnitServlet</url-pattern> 
+   <url-pattern>/DisplayAcademicUnitsServlet</url-pattern> 
+    <url-pattern>/DeleteAcademicUnitServlet</url-pattern> 
+       <url-pattern>/AddAcademicUnitServlet</url-pattern> 
+           <!-- Student -->
+   <url-pattern>/studentform.jsp</url-pattern> 
+    <url-pattern>/UpdateStudentServlet</url-pattern>
+   <url-pattern>/DisplayStudentsServlet</url-pattern> 
+      <url-pattern>/DeleteStudentServlet</url-pattern> 
+       <url-pattern>/AddStudentServlet</url-pattern> 
+           <url-pattern>/studenttableform.html</url-pattern> 
+              <!-- Semester -->
+   <url-pattern>/semesterform.html</url-pattern>
+    <url-pattern>/UpdateSemesterServlet</url-pattern> 
+   <url-pattern>/DisplaySemesterServlet</url-pattern> 
+   <url-pattern>/DeleteSemesterServlet</url-pattern> 
+     <url-pattern>/AddSemesterServlet</url-pattern> 
+              <!-- Course -->
+   <url-pattern>/courseform.html</url-pattern> 
+    <url-pattern>/UpdateCourseServlet</url-pattern> 
+   <url-pattern>/DisplayCoursesServlet</url-pattern> 
+      <url-pattern>/DeleteCourseServlet</url-pattern> 
+      <url-pattern>/AddCourseServlet</url-pattern> 
+             <!-- Course Definition -->
+   <url-pattern>/coursedefinitionform.html</url-pattern>
+    <url-pattern>/UpdateCourseDefinitionServlet</url-pattern> 
+   <url-pattern>/DisplayCourseDefinitionsServlet</url-pattern> 
+      <url-pattern>/DeleteCourseDefinitionServlet</url-pattern> 
+         <url-pattern>/AddCourseDefinitionServlet</url-pattern> 
+             <!-- Student Registration -->
+   <url-pattern>/studentrregistrationform.html</url-pattern> 
+    <url-pattern>/UpdateStudentRegistrationServlet</url-pattern> 
+   <url-pattern>/DisplayStudentRegistrationsServlet</url-pattern> 
+    <url-pattern>/DeleteStudentRegistrationServlet</url-pattern> 
+     <url-pattern>/AddStudentRegistrationServlet</url-pattern> 
+             <!-- Teacher -->
+   <url-pattern>/teacherform.html</url-pattern>
+    <url-pattern>/UpdateTeacherServlet</url-pattern> 
+   <url-pattern>/DisplayTeacherServlet</url-pattern> 
+   <url-pattern>/DeleteTeacherServlet</url-pattern>
+   <url-pattern>/AddTeacherServlet</url-pattern>
+  </filter-mapping>
+
+
+
+  <!-- Error Page Configurations -->
+  <error-page>
+    <error-code>404</error-code>
+    <location>/errorHandling</location>
+  </error-page>
+  <error-page>
+    <error-code>500</error-code>
+    <location>/errorHandling</location>
+  </error-page>
+  
+
+</web-app>

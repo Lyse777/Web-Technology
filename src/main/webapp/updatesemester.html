@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Semester</title>
+</head>
+<body>
+    <h2>Update Semester</h2>
+    <form action="UpdateSemesterServlet" method="post">
+        <input type="hidden" name="semesterId" value="${semester.semesterId}">
+        <label for="semesterName">New Semester Name:</label><br>
+        <input type="text" id="semesterName" name="semesterName" value="${semester.semesterName}" required><br>
+        <label for="startingDate">New Starting Date:</label><br>
+        <input type="date" id="startingDate" name="startingDate" value="${semester.startingDate.toLocalDate()}" required><br>
+        <label for="endDate">New End Date:</label><br>
+        <input type="date" id="endDate" name="endDate" value="${semester.endDate.toLocalDate()}" required><br><br>
+        <button type="submit">Update Semester</button>
+    </form>
+</body>
+</html>

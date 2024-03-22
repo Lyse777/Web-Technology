@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Academic Unit</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    a {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: #333;
+      text-decoration: none;
+      padding: 10px 20px;
+      background-color: #e0e0e0;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      font-weight: 600;
+    }
+
+    a:hover {
+      background-color: #d0d0d0;
+    }
+
+    h2 {
+      color: #333;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 700;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      margin: 0;
+    }
+
+    h2 a {
+      margin-left: 10px;
+      font-size: 14px;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #555;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 14px;
+    }
+
+    input[type="text"],
+    select {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      transition: border-color 0.3s ease;
+    }
+
+    input[type="text"]:focus,
+    select:focus {
+      border-color: #6c63ff;
+      outline: none;
+      box-shadow: 0 0 5px rgba(108, 99, 255, 0.3);
+    }
+
+    button[type="submit"] {
+      background-color: #6c63ff;
+      color: #fff;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #5a52e2;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <h2>Add Academic Unit <a href="DisplayAcademicUnitsServlet">Display Academic Units</a></h2>
+  <form id="academicUnitForm" action="addAcademicUnit" method="post">
+    <label for="academicCode">Academic Code:</label><br>
+    <input type="text" id="academicCode" name="academicCode"><br>
+    <label for="academicName">Academic Name:</label><br>
+    <select id="academicName" name="academicName">
+      <option value="Software Engineering">Software Engineering</option>
+      <option value="Networking">Networking and Communication</option>
+      <option value="Information Management">Information Management</option>
+    </select><br>
+    <label for="type">Type:</label><br>
+    <select id="type" name="type">
+      <option value="PROGRAM">Program</option>
+      <option value="FACULTY">Faculty</option>
+      <option value="DEPARTMENT">Department</option>
+    </select><br>
+    <button type="submit">Add Academic Unit</button>
+  </form>
+</body>
+</html>

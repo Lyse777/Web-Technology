@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Teacher</title>
+  <style>
+    body {
+      font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    h2 {
+      color: #333;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+    }
+
+    h2 a {
+      margin-left: 20px;
+      font-size: 14px;
+      padding: 6px 12px;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      max-width: 400px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #555;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 14px;
+    }
+
+    input[type="text"],
+    select {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      transition: border-color 0.3s ease;
+    }
+
+    input[type="text"]:focus,
+    select:focus {
+      border-color: #6c63ff;
+      outline: none;
+      box-shadow: 0 0 5px rgba(108, 99, 255, 0.3);
+    }
+
+    button[type="submit"] {
+      background-color: #6c63ff;
+      color: #fff;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #5a52e2;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    a {
+      display: inline-block;
+      color: #333;
+      text-decoration: none;
+      padding: 10px 20px;
+      background-color: #e0e0e0;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      font-weight: 600;
+    }
+
+    a:hover {
+      background-color: #d0d0d0;
+    }
+  </style>
+</head>
+<body>
+  <h2>Add Teacher <a href="DisplayTeacherServlet">Display Teachers</a></h2>
+  <form id="addTeacherForm" action="AddTeacherServlet" method="post">
+    <label for="firstName">First Name:</label><br>
+    <input type="text" id="firstName" name="firstName" required><br>
+    <label for="lastName">Last Name:</label><br>
+    <input type="text" id="lastName" name="lastName" required><br>
+    <label for="qualification">Qualification:</label><br>
+    <select id="qualification" name="qualification" required>
+      <option value="MASTER">Master</option>
+      <option value="PHD">PhD</option>
+      <option value="PROFESSOR">Professor</option>
+    </select><br>
+    <label for="courseId">Course ID:</label><br>
+    <input type="text" id="courseId" name="courseId" required><br>
+    <label for="tutorRole">Tutor Role:</label><br>
+    <select id="tutorRole" name="tutorRole" required>
+      <option value="TUTOR">Tutor</option>
+      <option value="ASSISTANT_TUTOR">Assistant Tutor</option>
+    </select><br><br>
+    <button type="submit">Add Teacher</button>
+  </form>
+</body>
+</html>
